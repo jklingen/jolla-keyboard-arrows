@@ -32,7 +32,7 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 FunctionKey {
-	width: 50
+    width: 50
     icon.source: "image://theme/icon-l-left" + (pressed ? ("?" + Theme.highlightColor) : "")
     repeat: true
     key: Qt.Key_Left
