@@ -33,7 +33,8 @@ import Sailfish.Silica 1.0
 
 FunctionKey {
     width: 50
-    icon.source: "image://theme/icon-l-left" + (pressed ? ("?" + Theme.highlightColor) : "")
+    icon.source: "image://theme/" + (keyboard.inSymView ? "icon-m-previous" : "icon-m-left") + (pressed ? ("?" + Theme.highlightColor) : "")
     repeat: true
-    key: Qt.Key_Left
+    key: keyboard.inSymView ? Qt.Key_Backtab : Qt.Key_Left
 }
+
