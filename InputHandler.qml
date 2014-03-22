@@ -66,7 +66,7 @@ Item {
             return
 
         if (pressedKey.repeat) {
-            autorepeatTimer.interval = 800
+            autorepeatTimer.interval = 500
             autorepeatTimer.start()
         }
     }
@@ -117,6 +117,10 @@ Item {
             MInputMethodQuick.sendKey(Qt.Key_Left, 0, "", Maliit.KeyClick)
         } else if (pressedKey.key === Qt.Key_Right) {
             MInputMethodQuick.sendKey(Qt.Key_Right, 0, "", Maliit.KeyClick)
+        } else if (pressedKey.key === Qt.Key_Backtab) {
+            MInputMethodQuick.sendKey(Qt.Key_Backtab, 0, "", Maliit.KeyClick)
+        } else if (pressedKey.key === Qt.Key_Tab) {
+            MInputMethodQuick.sendKey(Qt.Key_Down, 0, "", Maliit.KeyClick)
         } else if (pressedKey.key === Qt.Key_Paste) {
             MInputMethodQuick.sendCommit(Silica.Clipboard.text)
         } else  {
