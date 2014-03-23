@@ -29,4 +29,4 @@ Apart from having arrow keys, the modified German keyboard is very close to the 
 
 ### Known issues:
 * The SailfishOS user interface does not (yet?) seem to have proper support for <kbd>Tab</kbd> and <kbd>Backtab</kbd>, but other apps might have.
-* The built-in browser allows tabbing forward through form input fields as expected. However, backtab also send the focus to the next input field.
+* The built-in browser allows tabbing forward through form input fields as expected. However, backtab also sends the focus to the next input field, instead of the previous one.
