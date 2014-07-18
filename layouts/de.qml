@@ -74,7 +74,7 @@ KeyboardLayout {
         CharacterKey { caption: "b"; captionShifted: "B"; symView: "'"; symView2: "”" }
         CharacterKey { caption: "n"; captionShifted: "N"; symView: ";"; symView2: "„"; accents: "nñ"; accentsShifted: "NÑ" }
         CharacterKey { caption: "m"; captionShifted: "M"; symView: ":"; symView2: "×" }
-        CharacterKey { caption: ","; captionShifted: "," }
+        ContextAwareCommaKey {}
         CharacterKey { caption: "."; captionShifted: "." }
 
         BackspaceKey {}
